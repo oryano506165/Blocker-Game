@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://50ipr3cb5s34"]
+
+[ext_resource type="Script" uid="uid://tcgm38ygthp" path="res://box_3.gd" id="1_qxo8l"]
+[ext_resource type="Texture2D" uid="uid://cj8qv6uon7pd7" path="res://slime.png" id="2_n5btt"]
+
+[node name="Box3" type="Area2D" unique_id=207612298]
+script = ExtResource("1_qxo8l")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=122199009]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_n5btt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=757299258]

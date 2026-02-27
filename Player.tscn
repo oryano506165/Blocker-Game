@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cr6ef0vaykqxi"]
+
+[ext_resource type="Script" uid="uid://bbhxi7rmm0sjf" path="res://player.gd" id="1_kne1u"]
+[ext_resource type="Texture2D" uid="uid://dl3ci4wxt6sgc" path="res://蝴蝶結骷髏.png" id="2_kne1u"]
+[ext_resource type="PackedScene" uid="uid://cg1r063w2fwmi" path="res://Shield.tscn" id="3_cxr5p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tdg3f"]
+size = Vector2(120, 120)
+
+[node name="Player" type="Area2D" unique_id=1994700525 groups=["targets"]]
+process_mode = 1
+position = Vector2(500, 500)
+script = ExtResource("1_kne1u")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1086508813]
+modulate = Color(0.692224, 0.17863035, 0.2048147, 1)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_kne1u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1754326658]
+shape = SubResource("RectangleShape2D_tdg3f")
+
+[node name="Shield" parent="." unique_id=1536562553 instance=ExtResource("3_cxr5p")]

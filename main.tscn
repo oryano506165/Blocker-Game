@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://b0f0277xxscvo"]
+
+[ext_resource type="Script" uid="uid://hs40u6wyxlw7" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://cr6ef0vaykqxi" path="res://Player.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://df4lhl0rx0nci" path="res://Score_board.tscn" id="3_h2yge"]
+
+[node name="Main" type="Node2D" unique_id=300270045]
+process_mode = 3
+script = ExtResource("1_0xm2m")
+
+[node name="Player" parent="." unique_id=1994700525 instance=ExtResource("2_h2yge")]
+position = Vector2(500, 500)
+
+[node name="Timer" type="Timer" parent="." unique_id=92221042]
+process_mode = 1
+wait_time = 1.5
+autostart = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=42084605]
+
+[node name="GameOverLabel" type="Label" parent="CanvasLayer" unique_id=2036866835]
+process_mode = 3
+visible = false
+offset_left = 406.0
+offset_top = 255.0
+offset_right = 754.0
+offset_bottom = 343.0
+theme_override_colors/font_color = Color(0.95903486, 0, 0.15435651, 1)
+theme_override_font_sizes/font_size = 64
+text = "Game Over"
+horizontal_alignment = 1
+
+[node name="ScoreBoard" parent="." unique_id=1306878428 instance=ExtResource("3_h2yge")]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1176690037]
+position = Vector2(400, 400)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
