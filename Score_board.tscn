@@ -22,8 +22,8 @@ text = "Score:0"
 horizontal_alignment = 2
 
 [node name="HighScoreLabel" type="Label" parent="." unique_id=366130945]
-offset_left = 665.7224
-offset_top = 32.91713
-offset_right = 705.7224
-offset_bottom = 55.91713
+offset_left = 852.0
+offset_top = 30.0
+offset_right = 892.0
+offset_bottom = 53.0
 scale = Vector2(2, 2)
