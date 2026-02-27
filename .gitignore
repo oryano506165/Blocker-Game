@@ -6,3 +6,5 @@
 *.exe
 *.pck
 *.console
+*.import
+export_presets.cfg
