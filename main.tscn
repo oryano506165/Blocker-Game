@@ -9,7 +9,6 @@ process_mode = 3
 script = ExtResource("1_0xm2m")
 
 [node name="Player" parent="." unique_id=1994700525 instance=ExtResource("2_h2yge")]
-position = Vector2(500, 500)
 
 [node name="Timer" type="Timer" parent="." unique_id=92221042]
 process_mode = 1

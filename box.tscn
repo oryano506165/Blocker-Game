@@ -1,19 +1,21 @@
 [gd_scene format=3 uid="uid://dhq6jggl6xe04"]
 
 [ext_resource type="Script" uid="uid://ckrvxv6bj1q23" path="res://box.gd" id="1_oq5cr"]
-[ext_resource type="Texture2D" uid="uid://chdgb8vhxolep" path="res://紫水晶.png" id="2_oq5cr"]
+[ext_resource type="Texture2D" uid="uid://cdox5qeexbhyt" path="res://Crystal-removebg-preview.png" id="2_oq5cr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3n43a"]
-size = Vector2(84, 86)
+size = Vector2(73, 80)
 
 [node name="Box" type="Area2D" unique_id=492585158]
 script = ExtResource("1_oq5cr")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2004394143]
+position = Vector2(0, -7.9999995)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_oq5cr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=824528608]
+position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_3n43a")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
