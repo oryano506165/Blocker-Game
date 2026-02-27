@@ -1,5 +1,8 @@
-# Godot-specific ignores
 .godot/
 *.translation
 *.tscn.converted
 *.res.converted
+# 排除匯出檔（因為我們要放 Release）
+*.exe
+*.pck
+*.console
