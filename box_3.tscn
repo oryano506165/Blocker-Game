@@ -7,7 +7,7 @@
 size = Vector2(56, 50)
 
 [node name="Box3" type="Area2D" unique_id=207612298]
-modulate = Color(0.98831934, 0.13634646, 0.79528433, 1)
+modulate = Color(0.5331767, 0.108098485, 0.7254251, 1)
 script = ExtResource("1_qxo8l")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=122199009]
